@@ -758,6 +758,7 @@ export interface ApiRegistrationRegistration extends Schema.CollectionType {
     singularName: 'registration';
     pluralName: 'registrations';
     displayName: 'Registration';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -765,7 +766,7 @@ export interface ApiRegistrationRegistration extends Schema.CollectionType {
   attributes: {
     name: Attribute.String;
     email: Attribute.Email;
-    phoneno: Attribute.Integer;
+    phoneno: Attribute.BigInteger;
     olympiad: Attribute.String;
     address: Attribute.Text;
     createdAt: Attribute.DateTime;
